@@ -1,0 +1,17 @@
+# data handling
+pandas>=2.2.3
+numpy>=1.24.0
+
+# modeling & preprocessing
+scikit-learn>=1.6.1
+
+# plotting
+matplotlib>=3.5.0
+
+# DBRepo client & HTTP
+dbrepo>=1.8.1
+requests>=2.31.0
+
+# notebook support (if you open the .ipynb interactively)
+jupyterlab>=4.0.0
+ipykernel>=6.0.0
