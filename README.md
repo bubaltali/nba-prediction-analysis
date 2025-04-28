@@ -99,5 +99,7 @@ Platform : Pycharm
 2) clone the repo https://github.com/bubaltali/nba-prediction-analysis.git
 2) install dependencies pip install -r requirements.txt. 
 3) Launch the notebook
-4)  In the first code cell (Cell-1) of Analysis.ipynb you’ll find the csv data, which are stored locally. (DBRepo is not put in here due to security reasons) Run it, entering your DBRepo password when prompted; it will populate the processed/ folder.
-5) You can start running the data (Cell 0 shouldn't be run. This was used for personal use)
+4) Cell-0 shouldn't be run since all the data from the repo has been downloaded in there
+5) In the first code cell (Cell-1) of Analysis.ipynb you’ll find the csv data, which are stored locally. (DBRepo is not put in here due to security reasons) Run it, entering your DBRepo password when prompted; it will populate the processed/ folder.
+6) You can start running the data (Cell 0 shouldn't be run. This was used for personal use)
+7) Last cells have been used for creating models and png files for exporting the results as png format.
