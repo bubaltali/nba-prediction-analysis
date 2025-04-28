@@ -33,6 +33,8 @@ ipykernel
 
 
 nba-prediction-analysis/
+├── models/
+│     ├── nba_model.pkl
 ├── notebooks/
 │   ├── .ipynb_checkpoints/
 │   │   └── Analysis-checkpoint.ipynb
@@ -55,7 +57,7 @@ nba-prediction-analysis/
 ### Notebook
 
 Analysis.ipynb : Notebook of the data 
-
+nba_model.pkl
 ### Raw Data 
 
 * The source of the raw data comes from Kaggle (Link: https://www.kaggle.com/datasets/shivamkumar121215/nba-stats-dataset-for-last-10-years/data)
