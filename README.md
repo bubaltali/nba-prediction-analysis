@@ -33,6 +33,9 @@ ipykernel
 
 
 nba-prediction-analysis/
+├── metadata/
+│     ├── codemeta.json
+│     ├── fair4ml_metadata.jsonld
 ├── models/
 │     ├── nba_model.pkl
 ├── notebooks/
@@ -86,7 +89,7 @@ Testing and training data were created by using subset in the dbrepo.
 
 * README.md: Gives an information about the package
 * requirements.txt: Contains all the python packages to run the project flawlessly
-
+* In the metadata folder necessary files have been added
 ## Installation 
 
 Platform : Pycharm
