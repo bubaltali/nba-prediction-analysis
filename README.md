@@ -32,7 +32,7 @@ ipykernel
 
 
 
-Scripts/
+nba-prediction-analysis/
 ├── notebooks/
 │   ├── .ipynb_checkpoints/
 │   │   └── Analysis-checkpoint.ipynb
