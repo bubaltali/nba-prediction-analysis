@@ -1,5 +1,5 @@
 
-
+# NOTE: Click "Raw" on the right side to see README.md properly
 
 # NBA Prediction Analysis
 
