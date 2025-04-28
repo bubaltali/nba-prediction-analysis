@@ -1,0 +1,32 @@
+{
+  "@context": "https://codemeta.github.io/contexts/codemeta.jsonld",
+  "@type": "SoftwareSourceCode",
+  "name": "nba-prediction-analysis",
+  "description": "Multi-output Random Forest model and analysis notebooks for NBA player stat prediction.",
+  "version": "1.0",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Burak Baltali",
+      "identifier": "https://orcid.org/0009-0009-8449-4864"
+    }
+  ],
+  "codeRepository": "https://github.com/bubaltali/nba-prediction-analysis/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "programmingLanguage": "Python",
+  "datePublished": "2025-04-26",
+  "dependencies": [
+    "scikit-learn>=1.4.2",
+    "pandas>=2.0.0",
+    "numpy>=1.23.0",
+    "matplotlib>=3.7.0",
+    "requests"
+  ],
+  "keywords": [
+    "nba",
+    "machine-learning",
+    "random-forest",
+    "multi-output",
+    "prediction"
+  ]
+}
