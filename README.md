@@ -58,14 +58,14 @@ Analysis.ipynb : Notebook of the data
 
 ### Raw Data 
 
-The source of the raw data comes from Kaggle (Link: https://www.kaggle.com/datasets/shivamkumar121215/nba-stats-dataset-for-last-10-years/data)
-RegularSeason.csv: Raw data of Regular Seasons.
-Playoffs_edited.csv: Raw data of Playoffs. In the beginning, the first column is named so that no error occurs during the upload of the data into dbrepo. 
-playoffprocessed.py: Processing the raw Playoff data into more readable processed data. This was very helpful especially splitting the seasons from String to numerical part and adding an extra
+* The source of the raw data comes from Kaggle (Link: https://www.kaggle.com/datasets/shivamkumar121215/nba-stats-dataset-for-last-10-years/data)
+* RegularSeason.csv: Raw data of Regular Seasons.
+* Playoffs_edited.csv: Raw data of Playoffs. In the beginning, the first column is named so that no error occurs during the upload of the data into dbrepo. 
+* playoffprocessed.py: Processing the raw Playoff data into more readable processed data. This was very helpful especially splitting the seasons from String to numerical part and adding an extra
 column for representing season_end.
-regularprocessed.py: Similar as the playoffprocessed.py, the code takes the raw RegularSeason.csv and converted into more readable data type so that it can be easily imported into dbrepo. 
-Furthermore there was nba.csv data, which is the aggregate of both the statistics of Playoffs and RegularSeason in the Kaggle. 
-Even though nba.csv, which is the aggregate of both Regular_Season and playoffs_edited was not used for this assignment, it was put in here. 
+* regularprocessed.py: Similar as the playoffprocessed.py, the code takes the raw RegularSeason.csv and converted into more readable data type so that it can be easily imported into dbrepo. 
+* Furthermore there was nba.csv data, which is the aggregate of both the statistics of Playoffs and RegularSeason in the Kaggle. 
+* Even though nba.csv, which is the aggregate of both Regular_Season and playoffs_edited was not used for this assignment, it was put in here. 
 
 
 
