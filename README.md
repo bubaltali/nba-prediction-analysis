@@ -77,7 +77,7 @@ column for representing season_end.
 ## Data sources:  
 Testing and training data were created by using subset in the dbrepo. 
 
-	
+
 * regular_train.csv:  For training purposes, the seasons 2012-2013 through 2021-2022 were selected as training purpose (DBRepo PID: 4421e56c-4cd3-4ec1-a566-a89d7ec0bced)
 * regular_test.csv: For testing purpose the 2022-2023  season was selected. (DBRepo PID: f9d84d5e-db01-4475-b7d1-80cfe9fe0e61)
 * playoff_train.csv: For training purposes, the seasons 2012-2013 through 2022-2023 were selected (DBRepo PID: bcb3cf2b-27df-48cc-8b76-9e49254783d0) 
