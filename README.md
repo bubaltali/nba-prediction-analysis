@@ -31,6 +31,7 @@ ipykernel
 ## Repository structure
 
 
+
 Scripts/
 ├── notebooks/
 │   ├── .ipynb_checkpoints/
@@ -49,6 +50,7 @@ Scripts/
 │   └── nba.csv
 ├── README.md
 └── requirements.txt
+
 
 ### Notebook
 
