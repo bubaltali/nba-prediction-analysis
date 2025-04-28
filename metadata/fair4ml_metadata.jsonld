@@ -1,0 +1,201 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "fair4ml": "https://w3id.org/fair4ml#"
+  },
+  "@type": ["SoftwareApplication", "fair4ml:Model"],
+  "name": "NBA Player Stat Multi-Output Prediction Model (Random Forest)",
+  "description": "A multi-output regression model trained using scikit-learn's MultiOutputRegressor wrapping a RandomForestRegressor. It predicts 6 key end-of-season player statistics (pts, reb, stl, tov, fg3a, fga) based on historical aggregated box-score data from NBA regular seasons and playoffs (2012-13 to 2023-24). Input features undergo preprocessing including dropping identifiers and one-hot encoding.",
+  "keywords": [
+    "NBA",
+    "basketball",
+    "player statistics",
+    "prediction",
+    "random forest",
+    "multi-output regression",
+    "scikit-learn",
+    "FAIR4ML"
+  ],
+  "author": {
+    "@type": "Person",
+    "name": "Burak Baltali",
+    "identifier": "https://orcid.org/0009-0009-8449-4864"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "applicationCategory": "Machine Learning",
+  "applicationSubCategory": "Regression",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "Python"
+  },
+  "runtimePlatform": "scikit-learn>=1.4.2",
+  "softwareRequirements": "https://github.com/bubaltali/nba-prediction-analysis/blob/main/requirements.txt",
+  "codeRepository": "https://github.com/bubaltali/nba-prediction-analysis/",
+  "dateModified": "2025-04-26",
+  "version": "1.0",
+  "identifier": "https://doi.org/10.70124/ymgzs-z3s43",
+  "fair4ml:hasInput": [
+    {
+      "@type": "Dataset",
+      "name": "regular_train.csv",
+      "description": "For training purposes, the seasons 2012-2013 through 2021-2022 were selected.",
+      "identifier": "https://test.dbrepo.tuwien.ac.at/identifier/4421e56c-4cd3-4ec1-a566-a89d7ec0bced"
+    },
+    {
+      "@type": "Dataset",
+      "name": "regular_test.csv",
+      "description": "For testing purposes, the 2022-2023 season was selected.",
+      "identifier": "https://test.dbrepo.tuwien.ac.at/identifier/f9d84d5e-db01-4475-b7d1-80cfe9fe0e61"
+    },
+    {
+      "@type": "Dataset",
+      "name": "playoff_train.csv",
+      "description": "For training purposes, the seasons 2012-2013 through 2022-2023 were selected.",
+      "identifier": "https://test.dbrepo.tuwien.ac.at/identifier/bcb3cf2b-27df-48cc-8b76-9e49254783d0"
+    },
+    {
+      "@type": "Dataset",
+      "name": "playoff_test.csv",
+      "description": "For testing purposes, the 2023-2024 season was selected.",
+      "identifier": "https://test.dbrepo.tuwien.ac.at/identifier/de37d568-e97f-4cb9-bc05-2e600cc97102"
+    }
+  ],
+  "fair4ml:hasFeature": [
+    {
+      "@type": "PropertyValue",
+      "name": "age",
+      "description": "Player age during the season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "gp",
+      "description": "Games played during the season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "mp",
+      "description": "Minutes played during the season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fg3a_last",
+      "description": "Three-point field goal attempts in the previous season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fga_last",
+      "description": "Field goal attempts in the previous season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "team",
+      "description": "Player's team (one-hot encoded)."
+    }
+  ],
+  "fair4ml:predicts": [
+    {
+      "@type": "PropertyValue",
+      "name": "pts",
+      "description": "Predicted points per season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "reb",
+      "description": "Predicted rebounds per season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "stl",
+      "description": "Predicted steals per season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "tov",
+      "description": "Predicted turnovers per season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fg3a",
+      "description": "Predicted 3-point field goal attempts per season."
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "fga",
+      "description": "Predicted field goal attempts per season."
+    }
+  ],
+  "associatedMedia": [
+    {
+      "@type": "ImageObject",
+      "name": "Plf-LAL_evaluation_plots.png",
+      "description": "Evaluation plots for the Playoffs - LAL Subset scenario.",
+      "contentUrl": "https://doi.org/10.70124/dvbq3-19522a",
+      "encodingFormat": "image/png"
+    },
+    {
+      "@type": "ImageObject",
+      "name": "Plf-Whole_evaluation_plots.png",
+      "description": "Evaluation plots for the Playoffs - Whole Dataset scenario.",
+      "contentUrl": "https://doi.org/10.70124/dvbq3-19522b",
+      "encodingFormat": "image/png"
+    },
+    {
+      "@type": "ImageObject",
+      "name": "Reg-LAL_evaluation_plots.png",
+      "description": "Evaluation plots for the Regular Season - LAL Subset scenario.",
+      "contentUrl": "https://doi.org/10.70124/dvbq3-19522c",
+      "encodingFormat": "image/png"
+    },
+    {
+      "@type": "ImageObject",
+      "name": "Reg-Whole_evaluation_plots.png",
+      "description": "Evaluation plots for the Regular Season - Whole Dataset scenario.",
+      "contentUrl": "https://doi.org/10.70124/dvbq3-19522d",
+      "encodingFormat": "image/png"
+    }
+  ],
+  "fair4ml:usesAlgorithm": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "sklearn.ensemble.RandomForestRegressor",
+      "softwareVersion": "1.4.2",
+      "hyperparameters": {
+        "n_estimators": 100,
+        "random_state": 42
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "sklearn.multioutput.MultiOutputRegressor",
+      "softwareVersion": "1.4.2"
+    }
+  ],
+  "fair4ml:trainingProcedure": "Trained on regular-season data (2012–2023) with a single train/test split. Fitting used MAE minimization without additional cross-validation.",
+  "fair4ml:hasEvaluationMeasure": [
+    {
+      "@type": "QuantitativeValue",
+      "name": "R² Score (Regular Season - Whole Dataset - Points)",
+      "value": 0.992233,
+      "description": "R² score evaluated on the regular season test set for the 'pts' target."
+    },
+    {
+      "@type": "QuantitativeValue",
+      "name": "MAE (Regular Season - Whole Dataset - Points)",
+      "value": 25.801855,
+      "unitText": "points",
+      "description": "Mean Absolute Error evaluated on the regular season test set for the 'pts' target."
+    },
+    {
+      "@type": "QuantitativeValue",
+      "name": "R² Score (Playoffs - LAL Subset - Points)",
+      "value": 0.860259,
+      "description": "R² score evaluated on the LAL playoff test subset for the 'pts' target."
+    }
+  ],
+  "isPartOf": {
+    "@type": "ResearchProject",
+    "name": "NBA Prediction Analysis",
+    "description": "Project analyzing historical NBA data to predict player and team performance, following FAIR principles.",
+    "url": "https://github.com/bubaltali/nba-prediction-analysis/"
+  }
+}
