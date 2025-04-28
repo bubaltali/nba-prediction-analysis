@@ -73,17 +73,17 @@ column for representing season_end.
 Testing and training data were created by using subset in the dbrepo. 
 
 	
-  regular_train.csv:  For training purposes, the seasons 2012-2013 through 2021-2022 were selected as training purpose (DBRepo PID: 4421e56c-4cd3-4ec1-a566-a89d7ec0bced)
-  regular_test.csv: For testing purpose the 2022-2023  season was selected. (DBRepo PID: f9d84d5e-db01-4475-b7d1-80cfe9fe0e61)
-  playoff_train.csv: For training purposes, the seasons 2012-2013 through 2022-2023 were selected (DBRepo PID: bcb3cf2b-27df-48cc-8b76-9e49254783d0)
-  playoff_test.csv: For testing purpose the 2023-2024  season was selected. (DBRepo PID: de37d568-e97f-4cb9-bc05-2e600cc97102)
+* regular_train.csv:  For training purposes, the seasons 2012-2013 through 2021-2022 were selected as training purpose (DBRepo PID: 4421e56c-4cd3-4ec1-a566-a89d7ec0bced)
+* regular_test.csv: For testing purpose the 2022-2023  season was selected. (DBRepo PID: f9d84d5e-db01-4475-b7d1-80cfe9fe0e61)
+* playoff_train.csv: For training purposes, the seasons 2012-2013 through 2022-2023 were selected (DBRepo PID: bcb3cf2b-27df-48cc-8b76-9e49254783d0) 
+* playoff_test.csv: For testing purpose the 2023-2024  season was selected. (DBRepo PID: de37d568-e97f-4cb9-bc05-2e600cc97102)
 
-These csv data were added notebook, so that any user can read it directly and can be automatically run once you go to Analysis.ipynb
+* These csv data were added notebook, so that any user can read it directly and can be automatically run once you go to Analysis.ipynb
 
 ## Others
 
-README.md: Gives an information about the package
-requirements.txt: Contains all the python packages to run the project flawlessly
+* README.md: Gives an information about the package
+* requirements.txt: Contains all the python packages to run the project flawlessly
 
 ## Installation 
 
